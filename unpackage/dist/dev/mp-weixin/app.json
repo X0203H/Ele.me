@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/discover/discover",
+    "pages/order/order",
+    "pages/mine/mine"
+  ],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "ShopHome/ShopHome",
+        "details/details"
+      ]
+    }
+  ],
+  "usingComponents": {
+    "van-button": "/wxcomponents/weapp/dist/button/index"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8e8e93",
+    "selectedColor": "#0089dc",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/image/sy.png",
+        "selectedIconPath": "static/image/sy-hover.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "iconPath": "static/image/fx.png",
+        "selectedIconPath": "static/image/fx-hover.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "static/image/dd.png",
+        "selectedIconPath": "static/image/dd-hover.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "static/image/wd.png",
+        "selectedIconPath": "static/image/wd-hover.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
