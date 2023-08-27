@@ -7,7 +7,9 @@ if (!Math) {
   "./pages/order/order.js";
   "./pages/mine/mine.js";
   "./subpkg/ShopHome/ShopHome.js";
-  "./subpkg/details/details.js";
+  "./subpkg/address/address.js";
+  "./subpkg/Add_address/Add_address.js";
+  "./subpkg/Edit_address/Edit_address.js";
 }
 const _sfc_main = {
   onLaunch: function() {

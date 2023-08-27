@@ -10,7 +10,9 @@
       "root": "subpkg",
       "pages": [
         "ShopHome/ShopHome",
-        "details/details"
+        "address/address",
+        "Add_address/Add_address",
+        "Edit_address/Edit_address"
       ]
     }
   ],
