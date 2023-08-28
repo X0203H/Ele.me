@@ -1,0 +1,1 @@
+<view class="content"><van-button wx:if="{{r0}}" bindclick="{{a}}" u-t="m" u-i="1df19eba-0" bind:__l="__l">你好</van-button></view>

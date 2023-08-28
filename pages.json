@@ -1,0 +1,112 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "饿了么"
+			}
+		}, {
+			"path": "pages/discover/discover",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "subpkg", // 分包根路径
+		"pages": [{
+			"path": "ShopHome/ShopHome",
+			"style": {
+				"navigationBarTitleText": "店铺主页",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "address/address",
+			"style": {
+				"navigationBarTitleText": "我的地址",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "Add_address/Add_address",
+			"style": {
+				"navigationBarTitleText": "添加地址",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "Edit_address/Edit_address",
+			"style": {
+				"navigationBarTitleText": "编辑地址",
+				"enablePullDownRefresh": false
+			}
+		}] // 分包的页面
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/weapp/dist/button/index",
+			"van-icon": "/wxcomponents/weapp/dist/icon/index",
+			"van-tag": "/wxcomponents/weapp/dist/tag/index",
+			"van-dialog": "/wxcomponents/weapp/dist/dialog/index",
+			"van-notify": "/wxcomponents/weapp/dist/notify/index",
+			"van-field": "/wxcomponents/weapp/dist/field/index"
+		}
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#8e8e93",
+		"selectedColor": "#0089dc",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"iconPath": "static/image/sy.png",
+			"selectedIconPath": "static/image/sy-hover.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/discover/discover",
+			"iconPath": "static/image/fx.png",
+			"selectedIconPath": "static/image/fx-hover.png",
+			"text": "发现"
+		}, {
+			"pagePath": "pages/order/order",
+			"iconPath": "static/image/dd.png",
+			"selectedIconPath": "static/image/dd-hover.png",
+			"text": "订单"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"iconPath": "static/image/wd.png",
+			"selectedIconPath": "static/image/wd-hover.png",
+			"text": "我的"
+		}]
+	},
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 1, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
